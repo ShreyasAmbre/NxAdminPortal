@@ -1,0 +1,9 @@
+.ant-btn-primary {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--primary-600);
+  }
+}

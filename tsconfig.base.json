@@ -14,7 +14,7 @@
       "@nx-admin-portal/features/feature-shell": [
         "src/libs/features/feature-shell/src/index.ts"
       ],
-      "@nx-admin-portal/shared": ["src/libs/shared/src/index.ts"]
+      "@nx-admin-portal/shared": ["src/libs/shared/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]
