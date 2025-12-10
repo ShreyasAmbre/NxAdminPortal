@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": false,
+    "target": "es2022",
+    "module": "preserve",
+    "lib": ["es2020", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@nx-admin-portal/features/feature-home": [
+        "src/libs/features/feature-home/src/index.ts"
+      ],
+      "@nx-admin-portal/features/feature-shell": [
+        "src/libs/features/feature-shell/src/index.ts"
+      ],
+      "@nx-admin-portal/shared": ["src/libs/shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
