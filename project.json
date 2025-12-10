@@ -24,7 +24,6 @@
         ],
         "styles": [
           "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-          "libs/shared/src/lib/styles/main.scss",
           "./src/styles.scss"
         ]
       },
@@ -42,12 +41,54 @@
               "maximumError": "8kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "src/environments/environment.ts",
+              "with": "src/environments/environment.prod.ts"
+            }
+          ]
         },
         "development": {
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true
+        },
+        "local": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "src/constants/endpoints.ts",
+              "with": "src/constants/endpoints.local.ts"
+            }
+          ]
+        },
+        "dev": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "src/environments/environment.ts",
+              "with": "src/environments/environment.dev.ts"
+            }
+          ]
+        },
+        "stage": {
+          "fileReplacements": [
+            {
+              "replace": "src/environments/environment.ts",
+              "with": "src/environments/environment.stg.ts"
+            }
+          ],
+          "optimization": true,
+          "sourceMap": true,
+          "extractLicenses": false,
+          "outputHashing": "all"
         }
       },
       "defaultConfiguration": "production"
