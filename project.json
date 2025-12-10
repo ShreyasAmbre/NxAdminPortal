@@ -20,6 +20,11 @@
           {
             "glob": "**/*",
             "input": "public"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/shared/src/lib/assets",
+            "output": "assets/shared"
           }
         ],
         "styles": [
