@@ -23,7 +23,7 @@
           },
           {
             "glob": "**/*",
-            "input": "libs/shared/src/lib/assets",
+            "input": "src/libs/shared/src/lib/assets",
             "output": "assets/shared"
           }
         ],
@@ -76,18 +76,6 @@
               "with": "src/environments/environment.dev.ts"
             }
           ]
-        },
-        "stage": {
-          "fileReplacements": [
-            {
-              "replace": "src/environments/environment.ts",
-              "with": "src/environments/environment.stg.ts"
-            }
-          ],
-          "optimization": true,
-          "sourceMap": true,
-          "extractLicenses": false,
-          "outputHashing": "all"
         }
       },
       "defaultConfiguration": "production"
