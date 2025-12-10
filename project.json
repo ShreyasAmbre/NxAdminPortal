@@ -63,13 +63,7 @@
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true,
-          "outputHashing": "all",
-          "fileReplacements": [
-            {
-              "replace": "src/constants/endpoints.ts",
-              "with": "src/constants/endpoints.local.ts"
-            }
-          ]
+          "outputHashing": "all"
         },
         "dev": {
           "optimization": false,
@@ -107,9 +101,12 @@
         },
         "development": {
           "buildTarget": "NxAdminPortal:build:development"
+        },
+        "local": {
+          "buildTarget": "NxAdminPortal:build:local"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "local"
     },
     "extract-i18n": {
       "executor": "@angular/build:extract-i18n",
